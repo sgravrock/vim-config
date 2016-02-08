@@ -43,6 +43,7 @@ Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'candycode.vim'
 Plugin 'Color-Sampler-Pack'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline-themes'
 
 "
 " Ruby / Rails
