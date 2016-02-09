@@ -13,19 +13,20 @@
 " come first or last, like Vundle and sourcing the machine-local config.
 " Instead, add it to one of the files in .vim/init, or create a new one.
 
+" Based on http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
+let iCanHazVundle=1
+    let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+    if !filereadable(vundle_readme) 
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-" Based on http://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/
-let need_to_install_plugins=0
-if empty(system("grep lazy_load ~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
-    echo "Installing Vundle..."
-    echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !rm -rf ~/.vim/bundle/Vundle.vim
-    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
-    let need_to_install_plugins=1
-endif
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
@@ -145,18 +146,16 @@ Plugin 'sjl/vitality.vim'
 Plugin 'brysgo/test_server'
 Plugin 'mdelillo/vim-simple-bdd'
 
+if iCanHazVundle == 0
+    echo "Installing Vundles, please ignore key map error messages"
+    echo ""
+    :PluginInstall
+endif
+
 call vundle#end()
 filetype plugin indent on
 
 syntax on
-
-if need_to_install_plugins == 1
-  echo "Installing plugins via Vundle. Please ignore warnings afterwards."
-  echo "This is a one-time operation that will take about a minute..."
-  silent! PluginInstall
-  echo "Done installing Vundle plugins!"
-  q
-endif
 
 runtime! init/**.vim
 
