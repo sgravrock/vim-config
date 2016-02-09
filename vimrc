@@ -61,7 +61,7 @@ Plugin 'vim-airline/vim-airline-themes'
 " General Editing
 "
 " Plugin 'tpope/vim-repeat'
-" Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " Plugin 'scrooloose/nerdcommenter'
 " Plugin 'kana/vim-textobj-user'
 " Plugin 'Julian/vim-textobj-variable-segment'
