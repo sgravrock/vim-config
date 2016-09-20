@@ -56,6 +56,7 @@ else
   " Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   " Plugin 'scrooloose/nerdcommenter'
+  Plugin 'tpope/vim-commentary'
   " Plugin 'kana/vim-textobj-user'
   " Plugin 'Julian/vim-textobj-variable-segment'
   " Plugin 'kana/vim-textobj-line'
