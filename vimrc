@@ -55,7 +55,7 @@ else
   "
   " Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
-  " Plugin 'scrooloose/nerdcommenter'
+  Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-commentary'
   " Plugin 'kana/vim-textobj-user'
   " Plugin 'Julian/vim-textobj-variable-segment'
@@ -70,7 +70,7 @@ else
   " Plugin 'ervandew/supertab'
   " Plugin 'nertzy/j-split'
   " Plugin 'matt-royal/diffthese'
-  " Plugin 'camelcasemotion'
+  Plugin 'camelcasemotion'
   " Plugin 'nertzy/edit-plus'
   " Plugin 'brysgo/quickfixfix'
   " Plugin 'Lokaltog/vim-easymotion'
@@ -97,7 +97,7 @@ else
   " Searching
   "
   " Plugin 'mileszs/ack.vim'
-  " Plugin 'epmatsw/ag.vim'
+  Plugin 'epmatsw/ag.vim'
   " Plugin 'tpope/vim-abolish'
   " Plugin 'henrik/vim-qargs'
   Plugin 'kien/ctrlp.vim'
