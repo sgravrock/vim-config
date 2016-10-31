@@ -87,6 +87,7 @@ else
   Plugin 'editorconfig/editorconfig-vim'
   " Plugin 'tpope/vim-projectionist'
   " Plugin 'kien/rainbow_parentheses.vim'
+  Plugin 'tpope/vim-sensible'
 
   "
   " Window Management
