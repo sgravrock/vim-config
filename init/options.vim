@@ -12,7 +12,7 @@ set ttimeout                    " Add back a timeout for terminal vim
 set ttimeoutlen=100             " Keep the timeout very short
 
 set showcmd                     " Show typed command prefixes while waiting for operator
-set mouse=a                     " Use mouse support in XTerm/iTerm.
+set mouse=r                     " Use mouse support in XTerm/iTerm.
 
 set expandtab                   " Use soft tabs
 set tabstop=2                   " Tab settings
