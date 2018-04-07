@@ -95,18 +95,16 @@ map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
 " Run tests
-map <leader>t :wa<CR>:RunTestLine<CR>
-map <leader>T :wa<CR>:RunTest<CR>
-map <leader>tt :wa<CR>:RunTestAgain<CR>
+nmap <leader>t :wa<CR>:TestNearest<CR>
+nmap <leader>T :wa<CR>:TestSuite<CR>
+nmap <leader>p :wa<CR>:TestLast<CR>
 
-map <F12> :write<CR>:RunTest<CR>
+map <F12> :write<CR>:TestSuite<CR>
 imap <F12> <ESC><F12>
-map <F11> :write<CR>:RunTestLine<CR>
+map <F11> :write<CR>:TestNearest<CR>
 imap <F11> <ESC><F11>
-map <F10> :write<CR>:RunTestAgain<CR>
+map <F10> :write<CR>:TestLast<CR>
 imap <F10> <ESC><F10>
-map <F9> :write<CR>:RunTestPrevious<CR>
-imap <F9> <ESC><F9>
 
 " Disable middle mouse button, F1
 map <MiddleMouse>   <Nop>

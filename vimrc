@@ -136,14 +136,15 @@ else
   "
   " Development Tool Integration
   "
-  " Plugin 'tpope/vim-fugitive'
-  " Plugin 'airblade/vim-gitgutter'
+  Plugin 'tpope/vim-fugitive'
+  Plugin 'airblade/vim-gitgutter'
   " Plugin 'pivotal/tmux-config'
-  " Plugin 'tpope/vim-dispatch'
+  Plugin 'tpope/vim-dispatch'
   " Plugin 'carlobaldassi/ConqueTerm'
   " Plugin 'sjl/vitality.vim'
   " Plugin 'brysgo/test_server'
   " Plugin 'mdelillo/vim-simple-bdd'
+  Plugin 'janko-m/vim-test'
 
   call vundle#end()
 
