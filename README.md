@@ -1,7 +1,7 @@
 # To Install
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
-    git clone https://github.com/pivotal/vim-config.git ~/.vim
+    git clone https://github.com/seattle-beach/vim-config.git ~/.vim
     ~/.vim/bin/install
 
 # Updating
