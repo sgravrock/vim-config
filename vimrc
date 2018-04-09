@@ -67,7 +67,7 @@ else
   " Plugin 'scrooloose/syntastic'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
-  " Plugin 'ervandew/supertab'
+  Plugin 'ervandew/supertab'
   " Plugin 'nertzy/j-split'
   " Plugin 'matt-royal/diffthese'
   Plugin 'camelcasemotion'
