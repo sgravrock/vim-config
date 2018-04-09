@@ -1,2 +1,6 @@
 autocmd FileType go set noexpandtab
 autocmd FileType go set nolist
+
+" vim-go settings
+let g:go_version_warning = 0
+let g:go_fmt_command = "goimports"

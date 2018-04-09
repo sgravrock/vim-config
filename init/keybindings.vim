@@ -35,10 +35,12 @@ nmap <C-h>      <C-w>h
 nmap <C-l>      <C-w>l
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
-map <D-<>       :tabedit ~/.vimrc<CR>
+nmap <D-<>       :tabedit $MYVIMRC<CR>
+" Open .vimrc with ,ev in split window
+nmap <leader>ev  :split $MYVIMRC<CR>
 
 " Reload .vimrc
-map <leader>rv  :source ~/.vimrc<CR>
+nmap <leader>rv  :source $MYVIMRC<CR>
 
 " Undo/redo - Doesn't MacVim already have this?
 map <D-z>       :earlier 1<CR>
