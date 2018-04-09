@@ -64,7 +64,7 @@ else
   Plugin 'tpope/vim-unimpaired'
   " Plugin 'sjl/gundo.vim'
   " Plugin 'godlygeek/tabular'
-  " Plugin 'scrooloose/syntastic'
+  Plugin 'scrooloose/syntastic'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
