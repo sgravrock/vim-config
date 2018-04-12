@@ -55,7 +55,7 @@ else
   "
   " Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
-  Plugin 'scrooloose/nerdcommenter'
+  " Plugin 'scrooloose/nerdcommenter'
   Plugin 'tpope/vim-commentary'
   " Plugin 'kana/vim-textobj-user'
   " Plugin 'Julian/vim-textobj-variable-segment'
@@ -101,13 +101,14 @@ else
   Plugin 'epmatsw/ag.vim'
   " Plugin 'tpope/vim-abolish'
   " Plugin 'henrik/vim-qargs'
-  Plugin 'kien/ctrlp.vim'
+  Plugin 'ctrlpvim/ctrlp.vim'
 
   "
   " Navigation
   "
-  Plugin 'scrooloose/nerdtree'
+  " Plugin 'scrooloose/nerdtree'
   " Plugin 'majutsushi/tagbar'
+  Plugin 'tpope/vim-vinegar'
 
   "
   " Languages
