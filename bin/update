@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ~/.vim
 git pull
-vim -c VundleUpdate -c quitall
+vim -c PlugUpdate! -c PlugClean! -c quitall
