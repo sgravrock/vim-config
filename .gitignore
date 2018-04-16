@@ -1,5 +1,6 @@
 .netrwhist
 doc/tags
 .vimlog
-bundle/*
+plugged/*
+autoload/plug.vim
 .git-together
