@@ -51,7 +51,7 @@ let need_to_install_plugins=0
   "
   " Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-surround'
-  Plug 'scrooloose/nerdcommenter'
+  " Plug 'scrooloose/nerdcommenter'
   Plug 'tpope/vim-commentary'
   " Plug 'kana/vim-textobj-user'
   " Plug 'Julian/vim-textobj-variable-segment'
@@ -97,13 +97,15 @@ let need_to_install_plugins=0
   Plug 'epmatsw/ag.vim'
   " Plug 'tpope/vim-abolish'
   " Plug 'henrik/vim-qargs'
-  Plug 'kien/ctrlp.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
 
   "
   " Navigation
   "
-  Plug 'scrooloose/nerdtree'
+
+  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   " Plug 'majutsushi/tagbar'
+  Plug 'tpope/vim-vinegar'
 
   "
   " Languages

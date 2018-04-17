@@ -100,12 +100,13 @@ map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%"
 nmap <leader>t :wa<CR>:TestNearest<CR>
 nmap <leader>T :wa<CR>:TestSuite<CR>
 nmap <leader>p :wa<CR>:TestLast<CR>
+nmap <leader>x :GoAlternate<CR>
 
-map <F12> :write<CR>:TestSuite<CR>
+" map <F12> :write<CR>:TestSuite<CR>
 imap <F12> <ESC><F12>
-map <F11> :write<CR>:TestNearest<CR>
+" map <F11> :write<CR>:TestNearest<CR>
 imap <F11> <ESC><F11>
-map <F10> :write<CR>:TestLast<CR>
+" map <F10> :write<CR>:TestLast<CR>
 imap <F10> <ESC><F10>
 
 " Disable middle mouse button, F1
