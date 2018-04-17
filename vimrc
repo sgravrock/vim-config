@@ -103,7 +103,7 @@ let need_to_install_plugins=0
   " Navigation
   "
 
-  " Plug 'scrooloose/nerdtree'
+  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   " Plug 'majutsushi/tagbar'
   Plug 'tpope/vim-vinegar'
 
