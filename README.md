@@ -2,7 +2,7 @@
 (Re)move ~/.vim and ~/.vimrc if you have them already, and run:
 
     git clone https://github.com/seattle-beach/vim-config.git ~/.vim
-    ~/.vim/bin/install
+    vim -c PlugInstall -c quitall
 
 # Updating
 Fetch the latest version of vim-config and install all the new bundles by running:
