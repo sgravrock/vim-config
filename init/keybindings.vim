@@ -171,6 +171,8 @@ map <D-N> :CtrlPCurWD<CR>
 
 " Write all
 map <silent> <F19>WriteAll :silent! wall<CR>
+" Enter saves file
+nnoremap <CR> :write<CR>
 
 " Press Space to turn off highlighting and clear any message already
 " displayed.
