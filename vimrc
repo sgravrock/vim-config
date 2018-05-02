@@ -77,8 +77,10 @@ Plug 'ervandew/supertab'
 " Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 " Plug 'tpope/vim-projectionist'
-" Plug 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 Plug 'tpope/vim-sensible'
+Plug 'guns/vim-sexp'
+Plug 'junegunn/vim-easy-align'
 
 "
 " Window Management
@@ -125,6 +127,7 @@ Plug 'fatih/vim-go'
 " Plug 'mxw/vim-jsx'
 " Plug 'lambdatoast/elm.vim'
 " Plug 'leafgarland/typescript-vim'
+Plug 'wlangstroth/vim-racket'
 
 "
 " Development Tool Integration
