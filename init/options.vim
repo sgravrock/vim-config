@@ -55,6 +55,9 @@ set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 
 set hls                         " search with highlights by default
 
+" Save anytime MacVim loses focus.
+autocmd FocusLost * silent! wall
+
 let g:sql_type_default="postgresql"
 
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
