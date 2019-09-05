@@ -12,7 +12,7 @@ set ttimeout                    " Add back a timeout for terminal vim
 set ttimeoutlen=100             " Keep the timeout very short
 
 set showcmd                     " Show typed command prefixes while waiting for operator
-if has("gui_macvim")
+if has("gui_running")
   set mouse=a
 else
   set mouse=r                     " Use mouse support in XTerm/iTerm.
