@@ -24,7 +24,12 @@
 " A change that doesn't meet all of those criterea doesn't go here because it
 " probably breaks vim for others. Instead of adding it here, put it in the
 " machine-specific ~/.vimrc.local. (If it's a shared machine, please check with
-" the rest of your team first.)
+" the rest of your team first.) Or, better yet, see if it can be handled with
+" project-specific settings like a .editorconfig file.
+
+set ignorecase
+set smartcase
+set hlsearch
 
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
