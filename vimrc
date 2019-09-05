@@ -27,6 +27,9 @@
 " the rest of your team first.) Or, better yet, see if it can be handled with
 " project-specific settings like a .editorconfig file.
 
+" Note: To install a plugin, put it in pack/foo/start/<plugin name>.
+" See <https://shapeshed.com/vim-packages/> for details.
+
 set ignorecase
 set smartcase
 set hlsearch
