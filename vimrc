@@ -37,3 +37,8 @@ set hlsearch
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" Wrap Git commit messages to 72 characters
+filetype plugin on
+set fo+=t
+au FileType gitcommit setlocal tw=72
