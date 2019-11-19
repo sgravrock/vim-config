@@ -42,3 +42,5 @@ endif
 filetype plugin on
 set fo+=t
 au FileType gitcommit setlocal tw=72
+
+set ai
