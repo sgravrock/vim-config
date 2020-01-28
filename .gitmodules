@@ -4,3 +4,6 @@
 [submodule "pack/ac/opt/vim-repeat"]
 	path = pack/ac/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "pack/ac/opt/vim-sensible"]
+	path = pack/ac/opt/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
