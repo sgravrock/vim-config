@@ -1,0 +1,6 @@
+[submodule "pack/ac/vim-surround"]
+	path = pack/ac/opt/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/ac/opt/vim-repeat"]
+	path = pack/ac/opt/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
