@@ -7,3 +7,6 @@
 [submodule "pack/ac/opt/vim-sensible"]
 	path = pack/ac/opt/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
+[submodule "pack/ac/opt/vim-colors-paramount"]
+	path = pack/ac/opt/vim-colors-paramount
+	url = https://github.com/owickstrom/vim-colors-paramount.git
