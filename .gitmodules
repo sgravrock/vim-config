@@ -10,3 +10,9 @@
 [submodule "pack/ac/opt/vim-colors-paramount"]
 	path = pack/ac/opt/vim-colors-paramount
 	url = https://github.com/owickstrom/vim-colors-paramount.git
+[submodule "pack/ac/opt/vimwiki"]
+	path = pack/ac/opt/vimwiki
+	url = https://github.com/vimwiki/vimwiki.git
+[submodule "pack/ac/opt/vim-unimpaired"]
+	path = pack/ac/opt/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
