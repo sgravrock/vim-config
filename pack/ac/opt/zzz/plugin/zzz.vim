@@ -7,7 +7,12 @@ endif
 set background=dark
 colorscheme paramount
 
+let mapleader="\<Space>"
+
 set number
+
+nnoremap \\ :write<cr>
+inoremap \\ <esc>:write<cr>
 
 " vimwiki
 let g:vimwiki_global_ext = 0
