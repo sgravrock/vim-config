@@ -41,17 +41,17 @@ au FileType gitcommit setlocal tw=72
 
 set ai
 
-let active = systemlist("git config git-together.active")
-let active = len(active) > 0 ? active[0] : ""
-let active = split(active, "+")
-for author in active
-  let opt = $HOME . "/.vim/pack/" . author . "/opt"
-  let packages = split(globpath(opt, "*"), "\n")
-  for path in packages
-    let package = fnamemodify(path, ":t")
-    execute "packadd! " . package
-  endfor
-endfor
+"let active = systemlist("git config git-together.active")
+"let active = len(active) > 0 ? active[0] : ""
+"let active = split(active, "+")
+"for author in active
+"  let opt = $HOME . "/.vim/pack/" . author . "/opt"
+"  let packages = split(globpath(opt, "*"), "\n")
+"  for path in packages
+"    let package = fnamemodify(path, ":t")
+"    execute "packadd! " . package
+"  endfor
+"endfor
 
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
