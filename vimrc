@@ -41,6 +41,15 @@ au FileType gitcommit setlocal tw=72
 
 set ai
 
+" MacVim defaults to very small fonts with a dark, very low contrast
+" color scheme.Set to something more accessible.
+" Note: To see all available schemes, type :colorscheme <ctrl-d> in
+" command mode.
+if has("gui_running")
+  colorscheme slate
+  set guifont=Menlo:h14
+endif
+
 "let active = systemlist("git config git-together.active")
 "let active = len(active) > 0 ? active[0] : ""
 "let active = split(active, "+")
