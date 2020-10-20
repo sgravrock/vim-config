@@ -39,7 +39,13 @@ filetype plugin on
 set fo+=t
 au FileType gitcommit setlocal tw=72
 
+" Sensible indent settings:
+" * Dumb autoindent (match previous line)
+" * Tab inserts two spaces (ugh, but it's pretty much a de facto standard)
 set ai
+set ts=2
+set sw=2
+set expandtab
 
 " MacVim defaults to very small fonts with a dark, very low contrast
 " color scheme.Set to something more accessible.
