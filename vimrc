@@ -30,6 +30,23 @@
 " Note: To install a plugin, put it in pack/foo/start/<plugin name>.
 " See <https://shapeshed.com/vim-packages/> for details.
 
+set nocompatible
+filetype off
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'epmatsw/ag.vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+
+call plug#end()
+
+filetype plugin indent on
+
+syntax on
+
 set ignorecase
 set smartcase
 set hlsearch
@@ -42,10 +59,22 @@ au FileType gitcommit setlocal tw=72
 " Sensible indent settings:
 " * Dumb autoindent (match previous line)
 " * Tab inserts two spaces (ugh, but it's pretty much a de facto standard)
-set ai
-set ts=2
-set sw=2
+set autoindent
+set tabstop=2
+set shiftwidth=2
 set expandtab
+set smarttab
+set number
+set nowrap
+set showmatch
+set splitright               " add new windows towards the right
+set splitbelow               " ... and bottom
+set wildmode=list:longest
+set scrolloff=3              " scroll when cursor is 3 lines from edge
+set laststatus=2             " always show statusline
+
+set incsearch
+set autoread
 
 " MacVim defaults to very small fonts with a dark, very low contrast
 " color scheme.Set to something more accessible.
@@ -54,7 +83,42 @@ set expandtab
 if has("gui_running")
   colorscheme slate
   set guifont=Menlo:h14
+	set mouse=a
+else
+  set mouse=r
 endif
+
+let mapleader = ","
+let g:ctrlp_working_path_mode = 'ra'
+
+map Y y$
+map <leader>v :vsp<CR>
+
+nmap <C-p> :CtrlP<CR>
+map \           :NERDTreeToggle<CR>
+map \|          :NERDTreeFind<CR>
+
+" Find current word in command mode
+function! AgGrep()
+  let command = "ag ".expand("<cword>")
+  cexpr system(command)
+  cw
+endfunction
+
+function! AgVisual()
+  normal gv"xy
+  let command = "ag ".@x
+  cexpr system(command)
+  cw
+endfunction
+
+" AckGrep current word
+map <leader>a :call AgGrep()<CR>
+" AckVisual current selection
+vmap <leader>a :call AgVisual()<CR>
+
+
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 
 "let active = systemlist("git config git-together.active")
 "let active = len(active) > 0 ? active[0] : ""
