@@ -54,6 +54,10 @@ set expandtab
 if has("gui_running")
   colorscheme slate
   set guifont=Menlo:h14
+  " This (and most other) color schemes use an extremly low contrast color
+  " for comments, rendering them almost unreadable. Disable.
+  syntax on
+  hi clear Comment
 endif
 
 "let active = systemlist("git config git-together.active")
